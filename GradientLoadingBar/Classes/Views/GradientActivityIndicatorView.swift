@@ -48,7 +48,7 @@ open class GradientActivityIndicatorView: UIView {
     // MARK: - Private properties
 
     /// The layer holding the gradient.
-    private var gradientLayer: CAGradientLayer? {
+    var gradientLayer: CAGradientLayer? {
         layer as? CAGradientLayer
     }
 

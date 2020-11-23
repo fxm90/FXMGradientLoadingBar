@@ -21,6 +21,8 @@ class AdvancedExampleViewController: UIViewController {
 
     @IBOutlet private var programmaticallyButton: BlueBorderedButton!
     @IBOutlet private var customColorsButton: BlueBorderedButton!
+    @IBOutlet private var roundedButton: BlueBorderedButton!
+    @IBOutlet private var circleButton: UIButton!
 
     // MARK: - Private properties
 
@@ -39,6 +41,9 @@ class AdvancedExampleViewController: UIViewController {
         return gradientActivityIndicatorView
     }()
 
+    private let cirlceGradientActivityIndicatorView = RoundedGradientActivityIndicatorView()
+    private let roundedGradientActivityIndicatorView = RoundedGradientActivityIndicatorView()
+
     // MARK: - Public methods
 
     override func viewDidLoad() {
@@ -46,6 +51,8 @@ class AdvancedExampleViewController: UIViewController {
 
         setupProgrammaticallyGradientActivityIndicatorView()
         setupCustomColorsGradientActivityIndicatorView()
+        setupCircleGradientActivityIndicatorView()
+        setupRoundedGradientActivityIndicatorView()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -68,6 +75,22 @@ class AdvancedExampleViewController: UIViewController {
             customColorsGradientActivityIndicatorView.fadeIn()
         } else {
             customColorsGradientActivityIndicatorView.fadeOut()
+        }
+    }
+
+    @IBAction func toggleCircleButtonTouchUpInside(_: Any) {
+        if cirlceGradientActivityIndicatorView.isHidden {
+            cirlceGradientActivityIndicatorView.fadeIn()
+        } else {
+            cirlceGradientActivityIndicatorView.fadeOut()
+        }
+    }
+
+    @IBAction func toggleRoundedButtonTouchUpInside(_: Any) {
+        if roundedGradientActivityIndicatorView.isHidden {
+            roundedGradientActivityIndicatorView.fadeIn()
+        } else {
+            roundedGradientActivityIndicatorView.fadeOut()
         }
     }
 
@@ -100,6 +123,38 @@ class AdvancedExampleViewController: UIViewController {
 
             customColorsGradientActivityIndicatorView.bottomAnchor.constraint(equalTo: customColorsButton.bottomAnchor),
             customColorsGradientActivityIndicatorView.heightAnchor.constraint(equalToConstant: Config.height)
+        ])
+    }
+
+    private func setupCircleGradientActivityIndicatorView() {
+        circleButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        cirlceGradientActivityIndicatorView.fadeOut(duration: 0)
+
+        cirlceGradientActivityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        circleButton.addSubview(cirlceGradientActivityIndicatorView)
+
+        NSLayoutConstraint.activate([
+            cirlceGradientActivityIndicatorView.leadingAnchor.constraint(equalTo: circleButton.leadingAnchor),
+            cirlceGradientActivityIndicatorView.trailingAnchor.constraint(equalTo: circleButton.trailingAnchor),
+
+            cirlceGradientActivityIndicatorView.topAnchor.constraint(equalTo: circleButton.topAnchor),
+            cirlceGradientActivityIndicatorView.bottomAnchor.constraint(equalTo: circleButton.bottomAnchor)
+        ])
+    }
+
+    private func setupRoundedGradientActivityIndicatorView() {
+        roundedButton.layer.cornerRadius = 20
+        roundedGradientActivityIndicatorView.fadeOut(duration: 0)
+
+        roundedGradientActivityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        roundedButton.addSubview(roundedGradientActivityIndicatorView)
+
+        NSLayoutConstraint.activate([
+            roundedGradientActivityIndicatorView.leadingAnchor.constraint(equalTo: roundedButton.leadingAnchor),
+            roundedGradientActivityIndicatorView.trailingAnchor.constraint(equalTo: roundedButton.trailingAnchor),
+
+            roundedGradientActivityIndicatorView.topAnchor.constraint(equalTo: roundedButton.topAnchor),
+            roundedGradientActivityIndicatorView.bottomAnchor.constraint(equalTo: roundedButton.bottomAnchor)
         ])
     }
 }

@@ -21,6 +21,7 @@
 		64E7F4252293E16B00BE5095 /* GradientActivityIndicatorView+AnimateIsHiddenTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E7F4242293E16B00BE5095 /* GradientActivityIndicatorView+AnimateIsHiddenTestCase.swift */; };
 		77357BD34CFF2778341F80E8 /* Pods_GradientLoadingBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CD5D69D7C3FBBDBF5FABBB /* Pods_GradientLoadingBar_Example.framework */; };
 		8020C040972E902A8CCAA9E7 /* Pods_GradientLoadingBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434E3C8A6E245A38C2831E73 /* Pods_GradientLoadingBar_Tests.framework */; };
+		94BAEE6D25612847007BA27E /* CircleBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BAEE6C25612846007BA27E /* CircleBorderedButton.swift */; };
 		972CFBCC2138849A006F14C9 /* SafeAreaExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972CFBCB2138849A006F14C9 /* SafeAreaExampleViewController.swift */; };
 		97464E6721372BCD0097183A /* AdvancedExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97464E6621372BCD0097183A /* AdvancedExampleViewController.swift */; };
 		97464E6921372C010097183A /* NavigationBarExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97464E6821372C010097183A /* NavigationBarExampleViewController.swift */; };
@@ -73,6 +74,7 @@
 		64C596EB2351D7FF00A6CC97 /* InterfaceBuilderExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceBuilderExampleViewController.swift; sourceTree = "<group>"; };
 		64E0F5BB2211B7D20066D00D /* GradientLoadingBarViewModelTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLoadingBarViewModelTestCase.swift; sourceTree = "<group>"; };
 		64E7F4242293E16B00BE5095 /* GradientActivityIndicatorView+AnimateIsHiddenTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GradientActivityIndicatorView+AnimateIsHiddenTestCase.swift"; sourceTree = "<group>"; };
+		94BAEE6C25612846007BA27E /* CircleBorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBorderedButton.swift; sourceTree = "<group>"; };
 		972CFBCB2138849A006F14C9 /* SafeAreaExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaExampleViewController.swift; sourceTree = "<group>"; };
 		97464E6621372BCD0097183A /* AdvancedExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedExampleViewController.swift; sourceTree = "<group>"; };
 		97464E6821372C010097183A /* NavigationBarExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarExampleViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 		97B6F5FD2143F31F008CFEA5 /* BlueBorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueBorderedButton.swift; sourceTree = "<group>"; };
 		A98CA9F1B0C1BD6864C14E01 /* Pods-GradientLoadingBar_SnapshotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradientLoadingBar_SnapshotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradientLoadingBar_SnapshotTests/Pods-GradientLoadingBar_SnapshotTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABA9B1EF5F3928BA6E31D3EA /* Pods_GradientLoadingBar_SnapshotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GradientLoadingBar_SnapshotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C06CA4DFA1DCB931095ABD3D /* GradientLoadingBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GradientLoadingBar.podspec; path = ../GradientLoadingBar.podspec; sourceTree = "<group>"; };
+		C06CA4DFA1DCB931095ABD3D /* GradientLoadingBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GradientLoadingBar.podspec; path = ../GradientLoadingBar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DC190F602496A24F0069E2B0 /* NotchGradientLoadingBarControllerTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchGradientLoadingBarControllerTestCase.swift; sourceTree = "<group>"; };
 		DCE3AB11249761AB00889FFA /* Snapshotting+WindowedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Snapshotting+WindowedImage.swift"; sourceTree = "<group>"; };
 		DCE3AB14249764A000889FFA /* GradientLoadingBarControllerTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLoadingBarControllerTestCase.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		97B6F5FB2143F31F008CFEA5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				94BAEE6C25612846007BA27E /* CircleBorderedButton.swift */,
 				97B6F5FC2143F31F008CFEA5 /* BlueFilledButton.swift */,
 				97B6F5FD2143F31F008CFEA5 /* BlueBorderedButton.swift */,
 				6430C3A22338F1CA001F4A33 /* LargeNavigationBarHeaderView.swift */,
@@ -600,6 +603,7 @@
 				97B6F5FE2143F31F008CFEA5 /* UIColor+CustomColors.swift in Sources */,
 				97B6F6002143F31F008CFEA5 /* BlueBorderedButton.swift in Sources */,
 				97464E6921372C010097183A /* NavigationBarExampleViewController.swift in Sources */,
+				94BAEE6D25612847007BA27E /* CircleBorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
