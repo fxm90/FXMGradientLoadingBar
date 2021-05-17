@@ -27,8 +27,6 @@ open class NotchGradientLoadingBarController: GradientLoadingBarController {
         static let largeCircleRadius: CGFloat = 20
     }
 
-    // MARK: - Public methods
-
     override open func setupConstraints(superview: UIView) {
         guard #available(iOS 11.0, *) else {
             /// The notch is only available when supporting safe area layout guides, which is starting from iOS 11.
@@ -53,20 +51,53 @@ open class NotchGradientLoadingBarController: GradientLoadingBarController {
         // Our view will be masked therefore the view height needs to cover the notch-height plus the given user-height.
         let height = 2 * Config.smallCircleRadius + Config.largeCircleRadius + self.height
 
+        let widthConstraint = gradientActivityIndicatorView.widthAnchor.constraint(equalTo: superview.widthAnchor, multiplier: progress)
+
         NSLayoutConstraint.activate([
             gradientActivityIndicatorView.topAnchor.constraint(equalTo: superview.topAnchor),
             gradientActivityIndicatorView.heightAnchor.constraint(equalToConstant: height),
 
             gradientActivityIndicatorView.leadingAnchor.constraint(equalTo: superview.leadingAnchor),
-            gradientActivityIndicatorView.trailingAnchor.constraint(equalTo: superview.trailingAnchor),
+            widthConstraint,
         ])
+
+        self.widthConstraint = widthConstraint
 
         // As we currently only support portrait mode (and no device rotation), we can safely use `bounds.size.width` here.
         let screenWidth = superview.bounds.size.width
-        applyNotchMask(for: screenWidth)
+        if UIDevice.current.orientation == .portrait {
+            // You will need NotchMask when device portrait orientation
+            applyNotchMask(for: screenWidth)
+        } else {
+            // If orientation is not portrait just get line mask
+            applyLineMask(for: screenWidth)
+        }
     }
 
     // MARK: - Private methods
+
+    private func applyLineMask(for screenWidth: CGFloat) {
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: .zero)
+
+        bezierPath.addLineTo(x: screenWidth, y: 0)
+
+        // Start by moving down at the end of the screen.
+        bezierPath.addLineTo(x: screenWidth, y: height)
+
+        // Draw line to the beginning of the screen.
+        bezierPath.addLineTo(x: 0, y: height)
+        bezierPath.close()
+
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = bezierPath.cgPath
+
+        if #available(iOS 13.0, *) {
+            shapeLayer.cornerCurve = .continuous
+        }
+
+        gradientActivityIndicatorView.layer.mask = shapeLayer
+    }
 
     // swiftlint:disable:next function_body_length
     private func applyNotchMask(for screenWidth: CGFloat) {

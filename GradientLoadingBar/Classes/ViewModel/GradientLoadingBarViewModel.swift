@@ -46,11 +46,21 @@ final class GradientLoadingBarViewModel {
                                        selector: #selector(didReceiveUIWindowDidBecomeKeyNotification(_:)),
                                        name: UIWindow.didBecomeKeyNotification,
                                        object: nil)
+
+        // Ask the system to start notifying when interface change
+        UIDevice.current.beginGeneratingDeviceOrientationNotifications()
+
+        // If change device orientation
+        notificationCenter.addObserver(self,
+                                       selector: #selector(didChangeOrientationNotification(_:)),
+                                       name: UIDevice.orientationDidChangeNotification,
+                                       object: nil)
     }
 
     deinit {
         /// By providing a custom de-initializer we make sure to remove the gradient-view from its superview.
         superviewSubject.value = nil
+        NotificationCenter.default.removeObserver(self)
     }
 
     // MARK: - Private methods
@@ -59,6 +69,14 @@ final class GradientLoadingBarViewModel {
         guard let keyWindow = sharedApplication.windows.first(where: { $0.isKeyWindow }) else { return }
 
         superviewSubject.value = keyWindow
+    }
+
+    @objc private func didChangeOrientationNotification(_: Notification) {
+        /// Sometimes didn't get correct window, so get some delay.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            guard let keyWindow = self.sharedApplication.windows.first(where: { $0.isKeyWindow }) else { return }
+            self.superviewSubject.value = keyWindow
+        }
     }
 }
 

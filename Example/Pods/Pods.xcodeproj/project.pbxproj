@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = SwiftFormat;
+			productName = SwiftFormat;
 		};
 		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
 			isa = PBXAggregateTarget;
@@ -24,6 +25,7 @@
 			dependencies = (
 			);
 			name = SwiftLint;
+			productName = SwiftLint;
 		};
 		B951B6FCD3E55AF969FBA9F7B476B877 /* SwiftConfigurationFiles */ = {
 			isa = PBXAggregateTarget;
@@ -33,6 +35,7 @@
 			dependencies = (
 			);
 			name = SwiftConfigurationFiles;
+			productName = SwiftConfigurationFiles;
 		};
 /* End PBXAggregateTarget section */
 
@@ -88,6 +91,7 @@
 		B32EF3CE4D6E838B0634F824D878AF28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59CE2F9522AE21F97AA29799051F00E /* Foundation.framework */; };
 		B4A0E7DE8263B28AC4D433D2AB0BD101 /* CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDC2C00D01795D9D5474A268FEA0790 /* CGPath.swift */; };
 		BEDA3BD4A21DD52829573D6AB7E3887A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59CE2F9522AE21F97AA29799051F00E /* Foundation.framework */; };
+		C02D502325AFFC100096D669 /* ProgressLoadingBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02D502225AFFC100096D669 /* ProgressLoadingBarController.swift */; };
 		C2E28779774BF76EBD7492257160E727 /* NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67BD6ECBAB898E12CB2B4D25E835034 /* NSViewController.swift */; };
 		C5B200336D2113D3C9081DF38FA71EFD /* NSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6A07B9F5942B9B48B90EEB598C7619 /* NSBezierPath.swift */; };
 		C903A253A697DCF3ABA3EE46B5DCD105 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B25BD308FFF65FD10083A71DF8B6D0 /* Internal.swift */; };
@@ -179,9 +183,9 @@
 		108AACC96F7DBC089B0840E09F19C698 /* Pods-GradientLoadingBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientLoadingBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		12241E9306298FD7BD30DD97B2F2F585 /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = Sources/SnapshotTesting/Snapshotting/Description.swift; sourceTree = "<group>"; };
 		132C18988D60EF85736C043D43C19E57 /* Pods-GradientLoadingBar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GradientLoadingBar_Tests-umbrella.h"; sourceTree = "<group>"; };
-		13520AB8B3790CE3CEDCBBEEE1EF237A /* Pods_GradientLoadingBar_SnapshotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GradientLoadingBar_SnapshotTests.framework; path = "Pods-GradientLoadingBar_SnapshotTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13520AB8B3790CE3CEDCBBEEE1EF237A /* Pods_GradientLoadingBar_SnapshotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GradientLoadingBar_SnapshotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1679A4CF92D4ADFB15F8200201EC3AE5 /* Pods-GradientLoadingBar_SnapshotTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GradientLoadingBar_SnapshotTests-frameworks.sh"; sourceTree = "<group>"; };
-		1711FC18263D47D46851F0433A93F110 /* Pods_GradientLoadingBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GradientLoadingBar_Tests.framework; path = "Pods-GradientLoadingBar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1711FC18263D47D46851F0433A93F110 /* Pods_GradientLoadingBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GradientLoadingBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		172DF8516EF6D5757C3FBEF1C0CB52DC /* Pods-GradientLoadingBar_SnapshotTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GradientLoadingBar_SnapshotTests-dummy.m"; sourceTree = "<group>"; };
 		1A9107CAA27BA0679345F24910903133 /* Pods-GradientLoadingBar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GradientLoadingBar_Tests-dummy.m"; sourceTree = "<group>"; };
 		1B664F0A7F5E59140F761C16069995E9 /* Pods-GradientLoadingBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientLoadingBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,11 +206,11 @@
 		3745B9ADEFD5EB502DDDCA38C54C0469 /* SpriteKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpriteKit.swift; path = Sources/SnapshotTesting/Snapshotting/SpriteKit.swift; sourceTree = "<group>"; };
 		388DBB0163B3768EC43AB87FFED8A19D /* URLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = Sources/SnapshotTesting/Snapshotting/URLRequest.swift; sourceTree = "<group>"; };
 		3A900E1CFF1D76CF61DDF7358F5C8863 /* Pods-GradientLoadingBar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GradientLoadingBar_Example-umbrella.h"; sourceTree = "<group>"; };
-		3C6A379C135C84644F189B8056CCBA04 /* Pods_GradientLoadingBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GradientLoadingBar_Example.framework; path = "Pods-GradientLoadingBar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6A379C135C84644F189B8056CCBA04 /* Pods_GradientLoadingBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GradientLoadingBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1546F727E84C17FB03D49A501AEBF3 /* LightweightObservable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LightweightObservable.modulemap; sourceTree = "<group>"; };
 		3D25A3B900085A32A5C7D3F385452EF0 /* GradientActivityIndicatorViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientActivityIndicatorViewModel.swift; sourceTree = "<group>"; };
 		4077B2112D2B1D73DE188E8058E85FA1 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/SnapshotTesting/Common/View.swift; sourceTree = "<group>"; };
-		42D87AB9459267458201EBFBB68848C1 /* readme.md */ = {isa = PBXFileReference; includeInIndex = 1; path = readme.md; sourceTree = "<group>"; };
+		42D87AB9459267458201EBFBB68848C1 /* readme.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		4371A74F9A6D74628527A30E755EFF25 /* Pods-GradientLoadingBar_SnapshotTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GradientLoadingBar_SnapshotTests-umbrella.h"; sourceTree = "<group>"; };
 		44FC5949DA58E53329E8837F44618093 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		4F9247405B237F2F2FC8E7A4256E26CE /* SnapshotTesting-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapshotTesting-Info.plist"; sourceTree = "<group>"; };
@@ -219,7 +223,7 @@
 		60F741339642A8D8B19A4EF0EDE2B528 /* LightweightObservable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LightweightObservable-dummy.m"; sourceTree = "<group>"; };
 		652D9AA358DBDB2DBA1CFB02CCBA8DC4 /* Pods-GradientLoadingBar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GradientLoadingBar_Tests-Info.plist"; sourceTree = "<group>"; };
 		675C8FED0CA649F447020502AC40DA94 /* Diffing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diffing.swift; path = Sources/SnapshotTesting/Diffing.swift; sourceTree = "<group>"; };
-		67873E92210DD4E777C49C6E8AEDC108 /* GradientLoadingBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GradientLoadingBar.framework; path = GradientLoadingBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67873E92210DD4E777C49C6E8AEDC108 /* GradientLoadingBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GradientLoadingBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69838A921E83418B945E72EB342809F5 /* Pods-GradientLoadingBar_SnapshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientLoadingBar_SnapshotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B8C3644CAA8A93B3901127A7B8DE26E /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Sources/SnapshotTesting/Snapshotting/UIView.swift; sourceTree = "<group>"; };
 		6BA6CC273DB1F3DF8863CA959253A9E1 /* LightweightObservable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LightweightObservable.debug.xcconfig; sourceTree = "<group>"; };
@@ -242,14 +246,14 @@
 		8B7AAA3C809414A46F196C6DE5F6CFB4 /* Observable+KeyPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Observable+KeyPath.swift"; path = "LightweightObservable/Classes/Extensions/Observable+KeyPath.swift"; sourceTree = "<group>"; };
 		8DD33C2202B004A8B452184DCFAB4DEC /* SnapshotTesting-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-prefix.pch"; sourceTree = "<group>"; };
 		8F17E189033503650D8A495ADF1F369D /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		95A4CD5CAEDCA57994965B76430C1FBE /* GradientLoadingBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GradientLoadingBar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A4CD5CAEDCA57994965B76430C1FBE /* GradientLoadingBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GradientLoadingBar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C2EEFBFFAE6AD15C903A20EE7BF57D7 /* Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Any.swift; path = Sources/SnapshotTesting/Snapshotting/Any.swift; sourceTree = "<group>"; };
-		9D184645A643B40E94DA5BC70B5C6F2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D184645A643B40E94DA5BC70B5C6F2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9D21ADE128CE03553F0F1D720F4F967D /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Sources/SnapshotTesting/Snapshotting/UIViewController.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DCA8C4CBB512E220B4470D94AF8BE7D /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = LightweightObservable/Classes/Observable.swift; sourceTree = "<group>"; };
 		9DD32929B122D2561D1E99468EECDBF7 /* Pods-GradientLoadingBar_SnapshotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientLoadingBar_SnapshotTests.release.xcconfig"; sourceTree = "<group>"; };
-		A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapshotTesting.framework; path = SnapshotTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapshotTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A652F20CE7EE44E64565C2120B651665 /* Pods-GradientLoadingBar_SnapshotTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GradientLoadingBar_SnapshotTests.modulemap"; sourceTree = "<group>"; };
 		A6F9A1BAFFBBC246C94565120C2B671A /* GradientLoadingBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GradientLoadingBar.modulemap; sourceTree = "<group>"; };
 		A85AAD62B88A5A61ED41F15941BCF50E /* UIBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBezierPath.swift; path = Sources/SnapshotTesting/Snapshotting/UIBezierPath.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 		BA6A07B9F5942B9B48B90EEB598C7619 /* NSBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSBezierPath.swift; path = Sources/SnapshotTesting/Snapshotting/NSBezierPath.swift; sourceTree = "<group>"; };
 		BB7F5859015C08DC99F4102C2001E38C /* LightweightObservable-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LightweightObservable-Info.plist"; sourceTree = "<group>"; };
 		BEBA37204701F79F631433A8EEF190E7 /* Pods-GradientLoadingBar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GradientLoadingBar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C02D502225AFFC100096D669 /* ProgressLoadingBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingBarController.swift; sourceTree = "<group>"; };
 		C4C95B2FA66AB0EFC760FE3BC82E183D /* XCTAttachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCTAttachment.swift; path = Sources/SnapshotTesting/Common/XCTAttachment.swift; sourceTree = "<group>"; };
 		C9D9BB3003EBE622D53CE1A43730C52F /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/SnapshotTesting/Snapshotting/String.swift; sourceTree = "<group>"; };
 		D07D86CBFE6D514D79D74AB257CD5408 /* GradientLoadingBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientLoadingBarController.swift; path = GradientLoadingBar/Classes/GradientLoadingBarController.swift; sourceTree = "<group>"; };
@@ -275,7 +280,7 @@
 		E59CE2F9522AE21F97AA29799051F00E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		ED333E2FD9F83C466E13C6A69C917345 /* String+SpecialCharacters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SpecialCharacters.swift"; path = "Sources/SnapshotTesting/Common/String+SpecialCharacters.swift"; sourceTree = "<group>"; };
 		ED5073BA8E5F040F45B737BBC7393222 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/SnapshotTesting/Async.swift; sourceTree = "<group>"; };
-		F196AAA163469B17170E99B82C7C4C0A /* LightweightObservable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LightweightObservable.framework; path = LightweightObservable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F196AAA163469B17170E99B82C7C4C0A /* LightweightObservable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LightweightObservable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B1750DE470F045803DE2094D5F7264 /* Pods-GradientLoadingBar_SnapshotTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GradientLoadingBar_SnapshotTests-Info.plist"; sourceTree = "<group>"; };
 		FBAEAE91BB9B77006558E537894C33C5 /* Pods-GradientLoadingBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientLoadingBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF135E1D23F08BE7F1D7FFC86260EF9B /* Pods-GradientLoadingBar_SnapshotTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GradientLoadingBar_SnapshotTests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -391,7 +396,6 @@
 				8B7AAA3C809414A46F196C6DE5F6CFB4 /* Observable+KeyPath.swift */,
 				9CF614E301B83EC4DD18CF37D095ED73 /* Support Files */,
 			);
-			name = LightweightObservable;
 			path = LightweightObservable;
 			sourceTree = "<group>";
 		};
@@ -400,7 +404,6 @@
 			children = (
 				D849F6B1672F929753FBCBD372FABBFA /* Support Files */,
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -409,7 +412,6 @@
 			children = (
 				73893CCD044DB8B8BFF17C6C86A52345 /* Support Files */,
 			);
-			name = SwiftFormat;
 			path = SwiftFormat;
 			sourceTree = "<group>";
 		};
@@ -464,7 +466,6 @@
 				C4C95B2FA66AB0EFC760FE3BC82E183D /* XCTAttachment.swift */,
 				0E360A9F9862C6DCC0C9EF8C5DF2BF51 /* Support Files */,
 			);
-			name = SnapshotTesting;
 			path = SnapshotTesting;
 			sourceTree = "<group>";
 		};
@@ -532,7 +533,6 @@
 			children = (
 				9F500AA9EDCC9F77CF819939A745BC17 /* Support Files */,
 			);
-			name = SwiftConfigurationFiles;
 			path = SwiftConfigurationFiles;
 			sourceTree = "<group>";
 		};
@@ -660,6 +660,7 @@
 			children = (
 				D07D86CBFE6D514D79D74AB257CD5408 /* GradientLoadingBarController.swift */,
 				75F160F9FC6E13D4D1784FAAF102A897 /* NotchGradientLoadingBarController.swift */,
+				C02D502225AFFC100096D669 /* ProgressLoadingBarController.swift */,
 				AD9DAFA98C524BF76082D2B10AEC6E6E /* Misc */,
 				9DA2A07C8C5316172DA2CA4B59E1C82A /* Pod */,
 				09BDC40D2A8CBBA8775B57441CFE0B94 /* Support Files */,
@@ -848,7 +849,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -941,6 +942,7 @@
 				DDDE93984B4D723CB07EC2F755E8DE2F /* GradientLoadingBar-dummy.m in Sources */,
 				9ADB23CA3DF64D1CF47513040AA579E1 /* GradientLoadingBarController.swift in Sources */,
 				081ACC777E7889B6D4A7F968C34DE894 /* GradientLoadingBarViewModel.swift in Sources */,
+				C02D502325AFFC100096D669 /* ProgressLoadingBarController.swift in Sources */,
 				AA10687BD2EC0D7EC6131EFB66CA1132 /* NotchGradientLoadingBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1100,6 +1102,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1127,8 +1130,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1138,10 +1140,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 283322DA7A49E2E4D67B814963BECFB3 /* SwiftLint.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1153,10 +1154,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44FC5949DA58E53329E8837F44618093 /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1168,7 +1168,6 @@
 			baseConfigurationReference = A95E7032DE35DF972EF7FEC8A884303B /* Pods-GradientLoadingBar_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1203,7 +1202,6 @@
 			baseConfigurationReference = 108AACC96F7DBC089B0840E09F19C698 /* Pods-GradientLoadingBar_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1239,7 +1237,6 @@
 			baseConfigurationReference = 9DD32929B122D2561D1E99468EECDBF7 /* Pods-GradientLoadingBar_SnapshotTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1274,7 +1271,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 77B5CE7191F5B0B041149F2190ECF5EA /* GradientLoadingBar.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1287,7 +1283,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GradientLoadingBar/GradientLoadingBar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GradientLoadingBar/GradientLoadingBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GradientLoadingBar/GradientLoadingBar.modulemap";
 				PRODUCT_MODULE_NAME = GradientLoadingBar;
@@ -1308,7 +1304,6 @@
 			baseConfigurationReference = 69838A921E83418B945E72EB342809F5 /* Pods-GradientLoadingBar_SnapshotTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1342,10 +1337,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 739B52B367A66EB59594809032052D1F /* SwiftConfigurationFiles.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1356,7 +1350,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 831F8084AF52F32E37D95A4C19E85D26 /* GradientLoadingBar.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1369,7 +1362,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GradientLoadingBar/GradientLoadingBar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GradientLoadingBar/GradientLoadingBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GradientLoadingBar/GradientLoadingBar.modulemap";
 				PRODUCT_MODULE_NAME = GradientLoadingBar;
@@ -1388,7 +1381,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A95E0EC64A130765609C642BEF951DC /* SnapshotTesting.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1402,7 +1394,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SnapshotTesting/SnapshotTesting-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapshotTesting/SnapshotTesting-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SnapshotTesting/SnapshotTesting.modulemap";
 				PRODUCT_MODULE_NAME = SnapshotTesting;
@@ -1422,7 +1414,6 @@
 			baseConfigurationReference = 1B664F0A7F5E59140F761C16069995E9 /* Pods-GradientLoadingBar_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1457,7 +1448,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6BA6CC273DB1F3DF8863CA959253A9E1 /* LightweightObservable.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1470,7 +1460,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LightweightObservable/LightweightObservable-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LightweightObservable/LightweightObservable-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LightweightObservable/LightweightObservable.modulemap";
 				PRODUCT_MODULE_NAME = LightweightObservable;
@@ -1489,10 +1479,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D997502F7A2A3F2E07DE43BA6C33DEF8 /* SwiftFormat.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1504,10 +1493,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2F1D5D4FE8EB1B511317314725F9D54 /* SwiftConfigurationFiles.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1519,7 +1507,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01195480F1DCEF69F5D9619C1B3C44E9 /* SnapshotTesting.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1533,7 +1520,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SnapshotTesting/SnapshotTesting-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapshotTesting/SnapshotTesting-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SnapshotTesting/SnapshotTesting.modulemap";
 				PRODUCT_MODULE_NAME = SnapshotTesting;
@@ -1553,7 +1540,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9EECF497600BB53CEDDACB2CE8A2B9D /* LightweightObservable.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1566,7 +1552,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LightweightObservable/LightweightObservable-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LightweightObservable/LightweightObservable-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LightweightObservable/LightweightObservable.modulemap";
 				PRODUCT_MODULE_NAME = LightweightObservable;
@@ -1608,6 +1594,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1652,7 +1639,6 @@
 			baseConfigurationReference = FBAEAE91BB9B77006558E537894C33C5 /* Pods-GradientLoadingBar_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1686,10 +1672,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00EBB6A2B0A117A761C58ED62B0D4C24 /* SwiftFormat.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

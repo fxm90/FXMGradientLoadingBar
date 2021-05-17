@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A29550F398D14038E3DD88D91573885C"
+               BlueprintIdentifier = "AD9297F9E6CC3E50EDCFECA0A77800B7"
                BuildableName = "GradientLoadingBar.framework"
                BlueprintName = "GradientLoadingBar"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -29,8 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -45,14 +43,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A29550F398D14038E3DD88D91573885C"
+            BlueprintIdentifier = "AD9297F9E6CC3E50EDCFECA0A77800B7"
             BuildableName = "GradientLoadingBar.framework"
             BlueprintName = "GradientLoadingBar"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

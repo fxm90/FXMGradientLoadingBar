@@ -16,6 +16,16 @@ public typealias GradientLoadingBar = GradientLoadingBarController
 open class GradientLoadingBarController {
     // MARK: - Public properties
 
+    /// The progress of the gradient bar for Width
+    ///
+    /// - Note: If device change orientation bindViewModel will call `setupConstraints()` So widthAnchor will remake indicator from previous progress value
+    internal var progress: CGFloat = 1
+
+    /// The width Constraint of the gradient bar.
+    ///
+    /// - Note: Has to be internal to allow overwriting `setProgress()`
+    internal var widthConstraint: NSLayoutConstraint?
+
     /// The height of the gradient bar.
     ///
     ///  - Note: Has to be public to allow overwriting `setupConstraints()`
@@ -94,13 +104,17 @@ open class GradientLoadingBarController {
             superViewTopAnchor = superview.topAnchor
         }
 
+        let widthConstraint = gradientActivityIndicatorView.widthAnchor.constraint(equalTo: superview.widthAnchor, multiplier: progress)
+
         NSLayoutConstraint.activate([
             gradientActivityIndicatorView.topAnchor.constraint(equalTo: superViewTopAnchor),
             gradientActivityIndicatorView.heightAnchor.constraint(equalToConstant: height),
 
             gradientActivityIndicatorView.leadingAnchor.constraint(equalTo: superview.leadingAnchor),
-            gradientActivityIndicatorView.trailingAnchor.constraint(equalTo: superview.trailingAnchor),
+            widthConstraint,
         ])
+
+        self.widthConstraint = widthConstraint
     }
 
     /// Fades in the gradient loading bar.
@@ -118,8 +132,9 @@ open class GradientLoadingBarController {
     // MARK: - Private methods
 
     private func bindViewModelToView() {
-        viewModel.superview.subscribeDistinct { [weak self] newSuperview, _ in
-            self?.updateSuperview(newSuperview)
+        // Every change orientation subscribe will update superview
+        viewModel.superview.subscribe { [weak self] new, _ in
+            self?.updateSuperview(new)
         }.disposed(by: &disposeBag)
     }
 
